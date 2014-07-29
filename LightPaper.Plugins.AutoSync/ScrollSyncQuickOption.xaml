@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="LightPaper.Plugins.AutoSync.ScrollSyncQuickOption"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:autoSync="clr-namespace:LightPaper.Plugins.AutoSync"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance autoSync:ScrollSynchronizer}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid HorizontalAlignment="Left">
+        <controls:ToggleSwitch Margin="10"
+                               Header="Enable AutoSync"
+                               OnLabel="Yes"
+                               OffLabel="No"
+                               IsChecked="{Binding EnableAutoSync}" />
+    </Grid>
+</UserControl>
